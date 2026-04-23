@@ -1,0 +1,2 @@
+side,shares,decision_price,arrival_price,avg_exec_price,end_price,total_shortfall_bps,delay_bps,temporary_bps,permanent_bps,adverse_selection_bps
+1,500.0,100.0,100.05,100.108,100.2,10.80000000000041,4.999999999999716,5.8000000000006935,15.000000000000568,9.199999999999875

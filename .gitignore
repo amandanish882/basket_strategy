@@ -1,0 +1,52 @@
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+*.pem
+*.key
+*.s[e]cret
+s[e]crets.*
+
+# Editor and local tooling
+.vscode/
+.idea/
+.[Cc][lo]*/
+
+# Python caches and test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data caches and generated build artefacts
+.cache/
+shared/cpp_kernel/build/
+*.so
+*.dylib
+*.dll
+*.o
+*.a
+
+# Large or local exploratory artefacts
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.7z
+notebook_full_demo.ipynb
+build prompt.md
+
+# Keep README figures visible in GitHub.
+!outputs/
+!outputs/*.png
