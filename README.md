@@ -155,7 +155,7 @@ $$
 **Rates carry** - sign-of-slope on the 2s/10s curve drives a DV01-weighted portfolio:
 
 $$
-\mathrm{signal}_t = \operatorname{sign}(y^{10Y}_t - y^{2Y}_t)
+\mathrm{signal}_t = \mathrm{sign}(y^{10Y}_t - y^{2Y}_t)
 \qquad
 r^{\text{carry}}_t = -\mathrm{signal}_{t-1}\cdot\bigl(D_2\,\Delta y^{2Y}_t - D_{10}\,\Delta y^{10Y}_t\bigr)
 $$
@@ -267,7 +267,7 @@ The cost-variance hedger trades off transaction cost against post-hedge variance
 
 $$
 \min_{x} \quad \underbrace{\sum_i \sqrt{x_i^2 + \varepsilon^2}\,s_i}_{\text{smoothed cost}}
-          + \lambda \cdot \underbrace{\operatorname{Var}\!\left[\mathrm{PnL}(\mathrm{port} + x)\right]}_{\text{residual variance}}
+          + \lambda \cdot \underbrace{\mathrm{Var}\!\left[\mathrm{PnL}(\mathrm{port} + x)\right]}_{\text{residual variance}}
 \qquad
 \text{s.t.}\quad -M \le x_i \le M
 $$
@@ -299,7 +299,7 @@ $$
 $$
 
 $$
-\operatorname{Var}[\text{cost}] = \sigma^2\tau\sum_{k\ge 1} x_k^2
+\mathrm{Var}[\text{cost}] = \sigma^2\tau\sum_{k\ge 1} x_k^2
 $$
 
 <div align="center">
